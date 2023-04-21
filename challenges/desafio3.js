@@ -3,14 +3,14 @@ db
   .find(
     {},
     {
-      "_id": 0,
-      "nome": 1,
-      "vendidos": 1,
-    }
+      _id: 0,
+      nome: 1,
+      vendidos: 1,
+    },
   )
   .sort(
     {
-      "vendido": -1
-    }
+      vendido: -1,
+    },
   )
-  .limit(1)
+  .limit(1);
