@@ -1,3 +1,4 @@
+use("commerce");
 db
   .produtos
   .updateMany(
@@ -17,7 +18,6 @@ db
   .find(
     {},
     {
-      _id: 0,
       nome: 1,
       ingredientes: 1,
     },
