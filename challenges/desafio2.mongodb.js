@@ -1,4 +1,4 @@
-use('commerce');
+use("commerce");
 db
   .produtos
   .find(
@@ -6,10 +6,11 @@ db
     {
       _id: 0,
       nome: 1, 
-      vendidos: 1
-    })
+      vendidos: 1,
+    },
+)
   .sort(
     {
-      vendidos: 1
-    }
+      vendidos: 1,
+    },
   );
