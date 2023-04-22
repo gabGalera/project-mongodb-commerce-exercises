@@ -1,12 +1,13 @@
+use("commerce");
 db
   .produtos
   .updateMany(
     {
-      nome: "Quarteirão com Queijo",
+      nome: "Cheddar McMelt",
     },
     {
       $pop: {
-        ingredientes: -1,
+        ingredientes: 1,
       },
     },
   );
