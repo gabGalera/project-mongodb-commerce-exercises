@@ -1,3 +1,4 @@
+use("commerce");
 db
   .resumoProdutos
   .insertOne(
